@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Đăng Ký</title>
+</head>
+<body>
+    <form onsubmit="return check_dangky(this);" action="dangnhap.html" method="post">
+        <table class="use dangnhap">
+            <caption>ĐĂNG KÝ</caption>
+            <tr>
+                <td>Tài Khoản</td>
+                <td><input type="text" name="user" id="" placeholder="Nhập Tài Khoản" autocomplete="username" ></td>
+            </tr>
+            <tr>
+                <td>MSSV:</td>
+                <td> <input type="text" name="MSSV" id="" placeholder="VD : B2205881" autocomplete="on" ></td>
+            </tr>
+            <tr>
+                <td>Họ Tên:</td>
+                <td> <input type="text" name="hoten" id="" placeholder="Nhập họ tên" autocomplete="on" ></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td><input type="radio" name="gioitinh" id="">Nam
+                    <input type="radio" name="gioitinh" id="">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td ><input type="date" name="ngaysinh" id=""></td>
+            </tr>
+            <tr>
+                <td>Khóa:</td>
+                <td ><input type="text" name="khoa" id="" placeholder="VD : 48" autocomplete="on" ></td>
+            </tr>
+            <tr>
+                <td>Số ĐT:</td>
+                <td ><input type="text" name="soĐT" id="" placeholder=" Số Điện thoại" autocomplete="on" ></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td ><input type="email" name="email" id="" placeholder=" Nhập Email"></td>
+            </tr>
+            <tr>
+                <td>Mật Khẩu</td>
+                <td><input type="password" name="psw" id="" autocomplete="new-password" placeholder=" Nhập Mật Khẩu"></td>
+            </tr>
+            <tr>
+                <td>Nhập lại Mật Khẩu</td>
+                <td><input type="password" name="repsw" id="" autocomplete="new-password" placeholder="*********"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="submit">Đăng Nhập</button>
+                    <button type="reset" class="cancle">Hủy</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="javascript.js"></script>
+</body>
+</html>

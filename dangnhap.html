@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Đăng Nhập</title>
+</head>
+<body>
+    <form onsubmit="return check_dangnhap(this)" method="get" action="index.html">
+        <table class="use dangnhap">
+            <caption>ĐĂNG NHẬP</caption>
+            <tr>
+                <td>Tài Khoản</td>
+                <td><input type="text" name="user"  placeholder="Nhập Tài Khoản" autocomplete="on"></td>
+            </tr>
+            <tr>
+                <td>Mật Khẩu</td>
+                <td><input type="password" name="psw" placeholder="Nhập Mật khẩu"  autocomplete="on"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="submit">Đăng Nhập</button>
+                    <button type="reset" class="cancle">Hủy</button>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+    <script src="javascript.js"></script>
+</body>
+</html>

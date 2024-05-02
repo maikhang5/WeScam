@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+table.use{
+    width: 500px;
+    margin: 10px 200px;
+    box-shadow:1px 1px 5px 5px rgba(56, 137, 133, 0.315);
+    padding: 10px;
+    padding-top: 30px;
+    height: auto;
+    position: relative;
+}
+table.use tr td:first-child {
+   font-weight: bold;
+   width:30%;
+   height: 25px;
+}
+
+table.use caption {
+    position: absolute;
+    top :0;
+    left: 0;
+    background-color: #3e9995;
+   color:#fff;
+   height: 30px;
+   width: 50%;
+   font-weight: bold;
+   text-align: center;
+   padding: 5px;
+}
+table.nhaphang{
+    padding-top: 40px;
+}
+
+table.nhaphang tr td:first-child {
+    font-weight: bold;
+    width:30%;
+    height: 30px;
+ }
+
+ table.nhaphang button{
+    color:#fff;
+    width: 15%;
+ }
+ .save{
+    background-color: #3e9995;
+ }
+ .cancle{
+    background-color: #527819;
+ }
+
+ table.list_product {
+    margin: 10px;
+    border: 1px solid blue;
+    background-color: blue;
+ }
+
+ table.list_product tr td{
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid blue;
+    margin: 0px;
+    text-align: center;
+    max-width: 200px;
+
+ }
+ table.list_product tr:first-child{
+    font-weight: bold;
+
+    text-align: center;
+ }
+ table.list_product tr:not(:first-child) td:not(:first-of-type) {
+    width: 200px;
+    text-align: left;
+ }
+
+ table.list_product tr td:last-of-type{
+    max-width: 100px;
+ }
+table.list_product img {
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+}
+table.list_product button {
+    width: 100%;
+    min-height: 30px;
+    color:black;
+    background-color: #dba464;
+
+}
+
+table.cart tr:first-child{
+    font-weight: bold;
+
+    text-align: left;
+ }
+ table.cart tr td:first-of-type {
+    width: 100px;
+    text-align: left;
+ }
+ table.dangnhap button{
+    border: 1px solid white;
+    padding: 3px;
+ }
+ table.dangnhap button.submit {
+    color:white;
+    background-color: rgb(28, 215, 53);
+ }
+ table.dangnhap button.cancle{
+    color:white;
+    background-color: rgb(152, 11, 11);
+ }

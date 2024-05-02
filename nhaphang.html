@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nhập Hàng</title>
+</head>
+<body>
+    <form onsubmit="return nhaphang(this);" action="index.html" method="get" name="formnhaphang">
+        <table class="nhaphang use">
+            <caption>THÔNG TIN NHẬP HÀNG</caption>
+            <tr> 
+                 <td>Loại Sản Phẩm:</td>
+                <td>
+                    <input type="radio" name="loai" id="" value="laptop" onclick="check_loai(this.value)">LapTop
+                    <input type="radio" name="loai" id="" value="phone" onclick="check_loai(this.value)">Điện Thoại
+
+                </td>
+            </tr>
+            <tr>
+               <td>Thương Hiệu: </td>
+                <td ><select name="brand" id="" class="brand_sp">
+                    <option value="">--select--</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Mã Sản Phẩm:</td>
+                <td ><input type="text" name="masp" placeholder="Sp001" ></td>
+            </tr> 
+            <tr>
+                <td>Tên Sản Phẩm:</td>
+                <td ><input type="text" name="tensp" placeholder=""></td>
+            </tr> 
+            <tr>
+                <td>Giá: </td>
+                <td ><input type="number" name="gia" placeholder="Nhập giá sản phẩm"></td>
+            </tr> 
+            <tr>
+                <td>Khuyến mãi: </td>
+                <td ><input type="number" name="coupon" placeholder="&lt; 30%"></td>
+            </tr> 
+            <!-- <tr>
+                <td>Coupon: </td>
+                <td ><input type="number" name="coupon" placeholder="%"></td>
+            </tr>  -->
+            <tr>
+                <td>Link Ảnh: </td>
+                <td ><textarea name="img" id="" cols="30" rows="10" placeholder="link1, link2, link3,...."></textarea>
+                <label ><br>Điền link URL, Mỗi đường link cách nhau dấu PHẨY (,) </label>
+                </td>
+                <tr>
+                    <td>Màn Hình:</td>
+                    <td ><input type="text" name="manhinh" placeholder="" ></td>
+                </tr> 
+                <tr>
+                    <td>CPU:</td>
+                    <td ><input type="text" name="cpu" placeholder="" ></td>
+                </tr> 
+                <tr>
+                    <td>RAM:</td>
+                    <td ><input type="text" name="ram" placeholder="" ></td>
+                </tr> 
+                <tr>
+                    <td>Trọng Lượng:</td>
+                    <td ><input type="text" name="trongluong" placeholder="" ></td>
+                </tr> 
+                <tr>
+                    <td>HDH:</td>
+                    <td ><input type="text" name="hdh" placeholder="" ></td>
+                </tr> 
+                <tr>
+                    <td>Kích Thước:</td>
+                    <td ><input type="text" name="kichthuoc" placeholder="" ></td>
+                </tr> 
+                <tr>
+                    <td>Xuất Xứ:</td>
+                    <td ><input type="text" name="xuatxu" placeholder="" ></td>
+                </tr> 
+                <tr>
+                    <td>Đánh Giá : </td>
+                    <td ><input type="text" name="danhgia" placeholder="" ></td>
+                </tr> 
+            </tr> 
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="save">Lưu</button>
+                    <button type="reset" class="cancle">Hủy</button>
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+<script src="javascript.js"></script>
+</body>
+</html>
